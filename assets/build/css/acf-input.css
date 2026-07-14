@@ -1,6 +1,6 @@
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/advanced-custom-fields-pro/assets/src/sass/acf-input.scss ***!
-  \****************************************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs/index.js??ruleSet[1].rules[1].use[2]!./src/advanced-custom-fields-pro/assets/src/sass/acf-input.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /*--------------------------------------------------------------------------------------------
 *
@@ -593,6 +593,11 @@ body.acf-browser-firefox .acf-field select {
   border-color: #dddddd;
   min-height: 28px;
 }
+.acf-admin-7-0 .acf-input-prepend,
+.acf-admin-7-0 .acf-input-append {
+  min-height: 40px;
+  padding: 9px 8px;
+}
 
 .acf-input-prepend {
   float: left;
@@ -709,8 +714,9 @@ html[dir=rtl] input.acf-is-prepended.acf-is-appended {
 *-----------------------------------------------------------------------------*/
 .acf-url i {
   position: absolute;
-  top: 5px;
+  top: 50%;
   left: 5px;
+  transform: translateY(-50%);
   opacity: 0.5;
   color: #7e8993;
 }
@@ -734,6 +740,9 @@ html[dir=rtl] input.acf-is-prepended.acf-is-appended {
   border-color: #ddd;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset;
   min-height: 31px;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-choices {
+  min-height: 40px;
 }
 .select2-container.-acf .select2-choices .select2-search-choice {
   margin: 5px 0 5px 5px;
@@ -846,6 +855,31 @@ html[dir=rtl] .select2-container.-acf .select2-choice .select2-arrow {
 }
 .acf-admin-3-8 .select2-container.-acf .select2-selection {
   border-color: #aaa;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-selection--single {
+  height: 40px;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-selection--single .select2-selection__rendered {
+  line-height: 38px;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-selection--multiple {
+  min-height: 40px;
+  line-height: 0;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-selection--multiple .select2-selection__rendered {
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 38px;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-selection--multiple .select2-search__field {
+  margin-top: 0;
+}
+.acf-admin-7-0 .select2-container.-acf .select2-selection--multiple .select2-selection__choice {
+  margin-top: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .select2-container.-acf .select2-selection--multiple .select2-search--inline:first-child {
   float: none;
